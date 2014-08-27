@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rajat.cluster" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="com.example.rajat.cluster.ClusterMain" />
+        <activity android:name=".NoteEdit" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".NoteDisplay"  android:theme="@style/Theme.Transparent" />
+        <activity android:name=".DisplayNotification">
+        <intent-filter>
+            <action android:name="com.example.rajat.cluster.DisplayNotification" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SignIn"
+            android:screenOrientation="portrait"
+            android:label="Cluster" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

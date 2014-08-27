@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/min1"
+    tools:context=".main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Cluster"
+        android:textStyle="bold"
+        android:textSize="150sp"
+        android:id="@+id/textView6"
+        android:layout_marginTop="90dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ff973359" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText5"
+        android:text="An idea, like a ghost, must be spoken to a little before it will explain itself."
+        android:layout_below="@+id/textView6"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:linksClickable="true"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Username"
+        android:layout_below="@+id/editText5"
+        android:layout_marginTop="70dp"
+        android:ems="10"
+        android:id="@+id/editName"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editPass"
+        android:lines="2"
+        android:hint="Password"
+        android:layout_below="@+id/editName"
+        android:layout_alignLeft="@+id/editName"
+        android:layout_alignStart="@+id/editName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:hint="Email"
+        android:lines="2"
+        android:id="@+id/editMail"
+        android:layout_below="@+id/editPass"
+        android:layout_alignLeft="@+id/editPass"
+        android:layout_alignStart="@+id/editPass" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Join us"
+        android:layout_marginLeft="140dp"
+        android:layout_marginRight="140dp"
+        android:ems="6"
+        android:layout_marginTop="20dp"
+        android:id="@+id/joinButton"
+        android:onClick="toSignIn"
+        android:layout_below="@+id/editMail"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Show saved data"
+        android:ems="6"
+        android:layout_marginLeft="140dp"
+        android:layout_marginRight="140dp"
+        android:id="@+id/loadButton"
+        android:layout_below="@+id/joinButton"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
